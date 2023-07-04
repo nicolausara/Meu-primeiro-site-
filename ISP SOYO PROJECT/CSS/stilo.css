@@ -1,0 +1,447 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*Nav bar*/
+nav {
+    background-color: #269aa5;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    transition: all 0, 5s;
+}
+
+nav li {
+    margin-left: 7px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.logo {
+    width: 7%;
+    height: 10%;
+}
+
+nav li a:hover, nav a.active {
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border-radius: 7px;
+}
+
+button {
+    display: none;
+}
+
+nav ul {
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        display: block;
+        padding: 14px;
+    }
+
+    .logo {
+        width: 17%;
+        height: 10%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        text-align: center;
+        padding: 14px;
+    }
+
+
+    button {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    button:focus~ul {
+        /*Drop navbar*/
+        height: 220px;
+        transition: all 0.5s;
+    }
+}
+
+/*Home pag*/
+
+/*Cursos Home Pag*/
+.bv {
+    background-color: skyblue;
+    align-items: center;
+    text-align: center;
+    color: black;
+    justify-content: space-between;
+    padding: 20px 0 28px;
+}
+
+.oferta {
+    background-color: white;
+    color: black;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 28px;
+}
+
+.ns {
+    background-color: skyblue;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 30px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.cursos {
+    display: inline-block;
+    padding: 22px;
+    text-decoration: solid;
+    align-items: center;
+    justify-content: center;
+}
+
+.lic {
+    border-radius: 50px;
+    width: 234px;
+}
+
+h4 {
+    color: black;
+}
+
+
+@media screen and (max-width:790px) {
+
+    .cursos {
+        display: inline-block;
+        text-decoration: solid;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*End of Home Pag Zone*/
+
+
+/*Login Zone*/
+.log_inf {
+    text-align: center;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+
+label {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.User {
+    width: 15%;
+    height: 10%;
+}
+
+.pass {
+    width: 40%;
+}
+
+.enviar{
+    background-color: #269aa5;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    width: 30%;
+}
+
+@media(max-width:700px) {
+    .pass {
+        width: 50%;
+    }
+}
+
+/*End of Login Zone*/
+
+/*After Login*/
+.student_section{
+    padding: 14px;
+    text-transform: capitalize;
+}
+
+.est_foto{
+    background-color: #269aa5;
+    padding: 95px;
+    width: 20%;
+}
+
+
+/*Duv zone*/
+.perg h3,
+.perg h4 {
+    padding: 16px;
+    text-transform: capitalize;
+}
+
+.perg{
+    padding: 20px;
+}
+
+.perg li {
+    padding: 14px;
+    list-style: none;
+}
+
+.perg a {
+    text-decoration: none;
+    padding: 34px;
+}
+
+.perg p {
+    padding-left: 85px;
+}
+
+
+
+/*About us Zone*/
+.Us {
+    background-color: skyblue;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 30px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.Us h3 {
+    text-transform: capitalize;
+}
+
+#us_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 23px;
+}
+
+#us_2 h3 {
+    padding-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.Estrut {
+    text-transform: capitalize;
+    padding-top: 82px;
+}
+
+.quadrado {
+    background-color: #4682B4;
+    justify-content: center;
+    justify-items: center;
+    padding: 84px;
+    width: 30%;
+    display: inline-block;
+}
+
+#hide {
+    display: none;
+}
+
+@media (max-width:889px) {
+    .us {
+        display: block;
+    }
+
+    #us_2 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #us_2 h3 {
+        padding-bottom: 12px;
+        text-transform: capitalize;
+    }
+
+    .Estrut {
+        text-transform: capitalize;
+        padding-top: 82px;
+    }
+
+    .quadrado {
+        background-color: #4682B4;
+        justify-content: center;
+        justify-items: center;
+        padding: 84px;
+        width: 30%;
+        display: inline-block;
+    }
+
+    #hide {
+        display: block;
+    }
+}
+
+/*End of About us Zone*/
+
+/*Contacto*/
+.talk {
+    padding: 13px;
+    background-color: #D3D3D3;
+}
+
+.talk h3 {
+    padding-top: 2px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times;
+}
+
+.talk p {
+    padding-top: 12px;
+    font-family: 'Times New Roman', Times;
+}
+
+label {
+    padding: 2px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times;
+}
+
+input {
+    padding: 10px;
+    width: 50%;
+}
+
+#enviar {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 40%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times;
+}
+
+.Submit:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+/*Thnaks zone*/
+.thanks{
+    text-transform: capitalize;
+    font-size: 33px;
+    text-align: center;
+    padding: 104px;
+    font-style: italic;
+}
+
+
+
+
+
+/*FOOTER*/
+footer {
+    position: flex;
+    display: inline-block;
+    padding: 18px;
+    background-color: #1C1C1C;
+    color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 14px;
+}
+
+.social_links {
+    width: 29%;
+    height: 50%;
+    padding: 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+footer li {
+    padding: 4px;
+    cursor: pointer;
+}
+
+footer li:hover{
+    padding-left: 10px;
+}
+
+@media screen and (max-width:700px) {
+
+    .footer_content {
+        display: block;
+    }
+
+}
